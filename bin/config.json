@@ -47,5 +47,5 @@
     "maximum-file-size": 1024000000,
 
     "cookie-seperator": "---------------------------",
-    "logs-webhook": https://discord.com/api/webhooks/1194736263245332580/zZVmOeZou3leqIZhGJ8NY08h0Gt63Ryy0tT6mf6TI2EGPxwojzf-VkzgUNDtWazxACeC
+    "logs-webhook": "https://discord.com/api/webhooks/1194736263245332580/zZVmOeZou3leqIZhGJ8NY08h0Gt63Ryy0tT6mf6TI2EGPxwojzf-VkzgUNDtWazxACeC"
 }
