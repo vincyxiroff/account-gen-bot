@@ -228,7 +228,7 @@ async def generate(interaction: discord.Interaction, service: str):
             if config['messages']['cookie-altmessage-switch']:
                 await channel.send(embed=embd)
             embd2=discord.Embed(title=f"`{service}` generated :label: ",description=':incoming_envelope: Check your DMs for the cookie.',color=config['colors']['success'])
-            embd2.set_footer(text='github.com/Atluzka/account-gen-bot',icon_url=interaction.user.avatar.url)
+            embd2.set_footer(text='leave a vouch if working, if not working generate another one',icon_url=interaction.user.avatar.url)
             embd2.set_image(url=config["generate-settings"]["gif-img-url"])
             await channel.send(file=discord.File(fp=StringIO(account['cookie']), filename=f'{service}.txt'))
             return await interaction.response.send_message(embed=embd2, ephemeral=False)
@@ -236,9 +236,9 @@ async def generate(interaction: discord.Interaction, service: str):
         else:
             channel = await interaction.user.create_dm()
             embd=discord.Embed(title="Account Generated :label: ",description=config['messages']['altsent'] + f"\n```{account['username']}:{account['password']}```",color=config['colors']['success']) 
-            embd.set_footer(text='github.com/Atluzka/account-gen-bot',icon_url=interaction.user.avatar.url)
+            embd.set_footer(text='leave a vouch if working, if not working generate another one',icon_url=interaction.user.avatar.url)
             embd2=discord.Embed(title=f"`{service}` generated :label: ",description=':incoming_envelope: Check your DMs for the account.',color=config['colors']['success'])
-            embd2.set_footer(text='github.com/Atluzka/account-gen-bot',icon_url=interaction.user.avatar.url)
+            embd2.set_footer(text='leave a vouch if working, if not working generate another one',icon_url=interaction.user.avatar.url)
             embd2.set_image(url=config["generate-settings"]["gif-img-url"])
             await channel.send(embed=embd)
             return await interaction.response.send_message(embed=embd2, ephemeral=False)
@@ -371,7 +371,7 @@ async def stock(interaction: discord.Interaction):
     prem_stock = await getPremiumStock()
     if len(stock) <= 0 and len(prem_stock) <= 0:
         embd=discord.Embed(title=f"Stock - 0 services",description='There are no services to display',color=config['colors']['stock'])
-        embd.set_footer(text='github.com/Atluzka/account-gen-bot')
+        embd.set_footer(text='divinityyy')
         return await interaction.response.send_message(embed=embd)
     filtered_stock = [] 
     for stk in prem_stock:
@@ -382,6 +382,6 @@ async def stock(interaction: discord.Interaction):
         filtered_stock.append(f"**{stk[0]}**: `{stk[1]}`")
     #random.shuffle(filtered_stock)
     embd=discord.Embed(title=f"Stock - {len(filtered_stock)} services",description='\n'.join(filtered_stock),color=config['colors']['stock'])
-    embd.set_footer(text='github.com/Atluzka/account-gen-bot')
+    embd.set_footer(text='DIVINITYYY')
     return await interaction.response.send_message(embed=embd)
 bot.run(config['token'])
