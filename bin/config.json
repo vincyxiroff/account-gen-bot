@@ -1,15 +1,15 @@
 {
     "token": "YOUR_BOT_TOKEN",
-    "guild-id": "YOUR_GUILD_ID",
+    "guild-id": "1182822205059518504",
     
     "gen-channels": [
-        1115386974413525055
+        1194736538639142943
     ],
     
     "roles": {
-        "free-role": "269539324931742842",
-        "premium-role": "269539324931742842",
-        "booster-role": "269539324931742842"
+        "free-role": "1183011733938380840",
+        "premium-role": "1183011732742996000",
+        "booster-role": "1183087248170831943"
     },
 
     "cooldowns": {
@@ -20,15 +20,16 @@
     },
 
     "admins": [
-        123456789012345678
+        1176938339140640818,
+        1182737532283256853
     ],
 
     "messages": {
         "noperms": ":neutral_face: ",
         "wrongchannel": ":thinking: ",
 
-        "cookie-altmessage-switch": false,
-        "altsent": "Thank you for using AtluzkaGEN"
+        "cookie-altmessage-switch": true,
+        "altsent": "Thank you for using DivinityGen"
     },
 
     "generate-settings": {
@@ -43,8 +44,8 @@
     },
 
     "_comment2": "Size for uploading stock. Default: 2097152 == 2mb",
-    "maximum-file-size": 2097152,
+    "maximum-file-size": 1024000000,
 
     "cookie-seperator": "---------------------------",
-    "logs-webhook": null
+    "logs-webhook": https://discord.com/api/webhooks/1194736263245332580/zZVmOeZou3leqIZhGJ8NY08h0Gt63Ryy0tT6mf6TI2EGPxwojzf-VkzgUNDtWazxACeC
 }
